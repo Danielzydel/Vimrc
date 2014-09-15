@@ -1,3 +1,4 @@
+syntax on
 set noautoindent
 map <F10> odie('<pre>'.print_r($,true));<ESC>?,true<CR>i
 map! <F10> die('<pre>'.print_r($,true));<ESC>?,true<CR>i
