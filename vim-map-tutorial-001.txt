@@ -1,0 +1,42 @@
+GOALS
+A - use vim to type a set of html tags faster
+B - use vim macro to record making tags blindingly fast
+C - create a map of the techniques learned in A and B
+
+To begin A, just follow these 10 directions and attempt to internalize them.  Once ready, move to B (instruction for B are in APPENDIX below).
+
+1) type "div"
+div
+
+2) esc into cmd mode
+div
+
+3) use "w" to return to the beginning of the word
+div
+
+4) use "cw" to cut, then type a less than character <
+<
+
+7) "esc", then "p" to paste 
+<div
+
+8) complete the html tag and open the closing
+<div></
+
+9) paste the "div" string
+<div></div
+
+10) then end the tag:
+<div></div>
+
+
+
+APPENDIX
+Vim Macro mode (for Goal B):
+  - execute step 1 first (your macro should be string independent to make any html tag)
+  - press "q" while in command mode, the mode status should say nothing
+  - press "q" again (or any key to store the macro) the status says "recording"
+  - now execute steps 2 through 10, work Goal A to get this down to fast
+  - press "q" again (or the key of your macro store) to stop recording
+
+To execute a macro use Shift+2 (@) followed by "q" (or macro store key).  Whoops?  don't forget to do step one before running your macro...the cursor position is sacred.  The golden rule is that at the end of the macro, the user should be left in a comfortable position.  In my debugging print_r map, i leave the user inserted at the point where they would type the variable to debug.  That will be the difference between a good map and an excellent map that you can't live without.
