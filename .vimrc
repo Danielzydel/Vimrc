@@ -1,5 +1,6 @@
 syntax on
 set noautoindent
+set viminfo=\'20,\"1000,:20,%,n~/.viminfo
 map <F10> odie('<pre>'.print_r($,true));<ESC>?,true<CR>i
 map! <F10> die('<pre>'.print_r($,true));<ESC>?,true<CR>i
 map <F12> odie('<pre>'.print_r($,true));<ESC>?,true<CR>i
