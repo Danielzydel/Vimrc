@@ -1,4 +1,5 @@
 syntax on
+map imp a !important;<ESC><bar>:s/; !important;/ !important;/<cr>
 set noautoindent
 set viminfo=\'20,\"1000,:20,%,n~/.viminfo
 map <F12> odie('<pre>'.print_r($,true));<ESC>?,true<CR>i
