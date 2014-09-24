@@ -19,3 +19,4 @@ autocmd BufWinEnter .vimrc silent loadview
 nmap ,cl :let @*=expand("%:p")<CR>
 map nojava1 :%s/\n\s*{/ {/g<CR>
 map nojava2 :%s/}\s*\n\s*else/} else/g<CR>
+map do :diffoff<CR>
