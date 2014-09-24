@@ -10,3 +10,5 @@ map hello ihello world <ESC>
 map tag <bar>cw<<ESC>pa></<ESC>pa><ESC>/><CR>a
 set ffs=unix,dos
 map php :set syntax=php<CR>
+set tabstop=2
+set list listchars=tab:-\ 
