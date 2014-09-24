@@ -12,3 +12,5 @@ set ffs=unix,dos
 map php :set syntax=php<CR>
 set tabstop=2
 set list listchars=tab:-\ 
+autocmd BufWinLeave .vimrc mkview
+autocmd BufWinEnter .vimrc silent loadview
