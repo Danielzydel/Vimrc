@@ -1,4 +1,5 @@
 syntax on
+syntax enable
 colorscheme desert
 set background=dark
 map imp a !important;<ESC><bar>:s/; !important;/ !important;/<cr>
