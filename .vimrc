@@ -4,6 +4,7 @@ colorscheme desert
 set background=dark
 map imp a !important;<ESC><bar>:s/; !important;/ !important;/<cr>
 set noautoindent
+set hlsearch
 set viminfo=\'20,\"1000,:20,%,n~/.viminfo
 map <F3> o<cfdump var=##><ESC>?##<CR>a
 map! <F3> <cfdump var=##><ESC>?##<CR>a
