@@ -17,3 +17,5 @@ set list listchars=tab:-\
 autocmd BufWinLeave .vimrc mkview
 autocmd BufWinEnter .vimrc silent loadview
 nmap ,cl :let @*=expand("%:p")<CR>
+map nojava1 :%s/\n\s*{/ {/g<CR>
+map nojava2 :%s/}\s*\n\s*else/} else/g<CR>
