@@ -1,4 +1,6 @@
 syntax on
+colorscheme desert
+set background=dark
 map imp a !important;<ESC><bar>:s/; !important;/ !important;/<cr>
 set noautoindent
 set viminfo=\'20,\"1000,:20,%,n~/.viminfo
