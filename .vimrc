@@ -10,7 +10,6 @@ map <F3> o<cfdump var=##><ESC>?##<CR>a
 map! <F3> <cfdump var=##><ESC>?##<CR>a
 map <F12> odie('<pre>'.print_r($,true));<ESC>?,true<CR>i
 map! <F12> die('<pre>'.print_r($,true));<ESC>?,true<CR>i
-map hello ihello world <ESC>
 map tag <bar>cw<<ESC>pa></<ESC>pa><ESC>/><CR>a
 set ffs=unix,dos
 map php :set syntax=php<CR>
