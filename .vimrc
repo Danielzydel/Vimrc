@@ -2,7 +2,7 @@ syntax on
 syntax enable
 colorscheme desert
 set background=dark
-map imp a !important;<ESC><bar>/important<cr>10l:s/; !important;/ !important;/<cr>
+map imp a !important;<ESC><bar>/important<cr>10l:s/; !important;/ !important;/<cr>$
 set noautoindent
 set hlsearch
 set viminfo=\'20,\"1000,:20,%,n~/.viminfo
@@ -21,3 +21,6 @@ nmap ,cl :let @*=expand("%:p")<CR>
 map nojava1 :%s/\n\s*{/ {/g<CR>
 map nojava2 :%s/}\s*\n\s*else/} else/g<CR>
 map do :diffoff<CR>
+if has("autocmd")
+  au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
+endif
