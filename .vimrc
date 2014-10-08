@@ -15,8 +15,9 @@ map imp a !important;<ESC><bar>/important<cr>10l:s/; !important;/ !important;/<c
 map <F3> o<cfdump var=##><ESC>?##<CR>a
 map! <F3> <cfdump var=##><ESC>?##<CR>a
 
-map <F11> o('console.log()')$<ESC>hi
-map! <F11> ('console.log()')$<ESC>hi 
+map <F11> oconsole.log()$<ESC>hi
+map! <F11> console.log()$<ESC>hi 
+
 map <F12> odie('<pre>'.print_r($,true));<ESC>?,true<CR>i
 map! <F12> die('<pre>'.print_r($,true));<ESC>?,true<CR>i
 
