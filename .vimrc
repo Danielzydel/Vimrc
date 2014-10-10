@@ -15,8 +15,8 @@ map imp a !important;<ESC><bar>/important<cr>10l:s/; !important;/ !important;/<c
 map <F3> o<cfdump var=##><ESC>?##<CR>a
 map! <F3> <cfdump var=##><ESC>?##<CR>a
 
-map <F7> odie(print_r($prepost,1).', '.print_r($post->ID,1));
-map! <F7> die(print_r($prepost,1).', '.print_r($post->ID,1));
+map <F7> <ESC>:s/$prepost/print_r($prepost, 1)
+map! <F7> <ESC>:s/$prepost/print_r($prepost, 1)
 
 map <F11> oconsole.log(‘here: ‘+here)<ESC>:s/here/
 map! <F11> console.log(‘here: ‘+here)<ESC>:s/here/
