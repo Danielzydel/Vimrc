@@ -18,8 +18,8 @@ map! <F3> <cfdump var=##><ESC>?##<CR>a
 map <F7> <ESC>:s/$prepost/print_r($prepost, 1)
 map! <F7> <ESC>:s/$prepost/print_r($prepost, 1)
 
-map <F11> oconsole.log(‘here: ‘+here)<ESC>:s/here/
-map! <F11> console.log(‘here: ‘+here)<ESC>:s/here/
+map <F11> oconsole.log('here: '+here)<ESC>:s/here/
+map! <F11> console.log('here: '+here)<ESC>:s/here/
 
 map <F12> odie('<pre>'.print_r($,true));<ESC>?,true<CR>i
 map! <F12> die('<pre>'.print_r($,true));<ESC>?,true<CR>i
