@@ -26,7 +26,8 @@ map! <F12> die('<pre>'.print_r($,true));<ESC>?,true<CR>i
 
 map tag <bar>cw<<ESC>pa></<ESC>pa><ESC>/><CR>a
 
-map ruri irtrim($_SERVER['REQUEST_URI'], '/')<ESC>
+map docroot artrim($_SERVER['DOCUMENT_ROOT'], '/')<ESC>
+map ruri a$_SERVER['REQUEST_URI']<ESC>
 
 map php :set syntax=php<CR>
 map nojava1 :%s/\n\s*{/ {/g<CR>
